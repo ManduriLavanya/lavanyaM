@@ -1,0 +1,51 @@
+package com.Bridgelabz.Algorithms;
+
+import java.util.LinkedList;
+
+public class PAP {
+	public static int pap(int a,int b) {
+		int flag=0;
+			for(int i=a;i<=b;i++) {
+				 for( int j = 2; j < i; j++)
+		            {
+		                if(i % j == 0) {
+		                	flag=0;
+		                	break;
+		                }
+		                else
+		                {
+		                    flag = 1;
+		                }
+		            } 
+				 
+				 if(flag == 1)
+		            { 
+					 	
+		              System.out.print(i+" ");
+//		              int temp=i,r=0,d;
+//		             if(i>0) {
+//		            	  d=i%10;
+//		            	  r = r* 10 + d;
+//		                  i /= 10;
+		            	  
+		              }
+//		              if(temp==r) {
+//		            	  System.out.println("temp"+r);
+//		              }
+		              
+		             
+		            }
+			
+			return 0;
+			
+	}
+	
+	
+	public static void main(String[] args) {
+		PAP p=new PAP();
+		p.pap(1,30);
+		LinkedList<Integer> l=new LinkedList<Integer>();
+		//l.add(pap(1,30));
+		System.out.println("l="+l);
+	}
+}

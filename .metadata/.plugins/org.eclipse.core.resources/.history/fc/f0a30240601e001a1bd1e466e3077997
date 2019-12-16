@@ -1,0 +1,15 @@
+package com.Bridgelabz.Algorithms;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class AnagramTest {
+
+	@Test
+	void test() {
+		
+		assertEquals(("pool,polo"),Anagram.checkAnagram("pool","polo"));
+	}
+
+}

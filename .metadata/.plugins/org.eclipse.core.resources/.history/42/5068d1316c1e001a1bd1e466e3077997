@@ -1,0 +1,16 @@
+package com.Bridgelabz.Algorithms;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class PermutationTest {
+
+	@Test
+	void test() {
+		
+		assertEquals(6,Permutation.permutations("abc", 0));
+	}
+
+}

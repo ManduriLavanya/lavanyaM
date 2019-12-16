@@ -1,0 +1,14 @@
+package com.Bridgelabz.Junit;
+
+import org.junit.jupiter.api.Test;
+
+class TemperatureTest {
+
+	@Test
+	void test() {
+		assertEquals(99,Temperature.fahren(37.0));
+	}
+
+	
+
+}

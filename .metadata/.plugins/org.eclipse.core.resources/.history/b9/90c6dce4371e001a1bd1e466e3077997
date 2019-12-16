@@ -1,0 +1,31 @@
+package com.Bridgelabz.Functional;
+
+import java.util.Scanner;
+
+public class Matrix {
+	public static void mian(String[] args) {
+	
+		Matrix m=new Matrix();
+		m.matrix();
+	}
+	public  int matrix() {
+		int a[][]=new int[3][3];
+		System.out.println("Enter the elements:");
+
+		Scanner s=new Scanner(System.in);
+		for(int i=0;i<3;i++) {
+			for(int j=0;j<3;j++) {
+				a[i][j]=s.nextInt();
+			}
+		}
+		
+		for(int i=0;i<3;i++) {
+			for(int j=0;j<3;j++) {
+				System.out.println(a[i][j]+" ");
+				
+			}
+			System.out.println();
+		}
+		return 0;
+	}
+}

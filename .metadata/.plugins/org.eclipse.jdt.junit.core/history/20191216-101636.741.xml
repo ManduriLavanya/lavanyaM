@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="FlipCoinTest" project="Basic" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.Bridgelabz.Basic.FlipCoinTest" time="0.06" displayname="FlipCoinTest" uniqueid="[engine:junit-jupiter]/[class:com.Bridgelabz.Basic.FlipCoinTest]">
+    <testcase name="test" classname="com.Bridgelabz.Basic.FlipCoinTest" time="0.06" displayname="test()" uniqueid="[engine:junit-jupiter]/[class:com.Bridgelabz.Basic.FlipCoinTest]/[method:test()]"/>
+  </testsuite>
+</testrun>

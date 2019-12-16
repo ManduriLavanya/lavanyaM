@@ -1,0 +1,15 @@
+package com.Bridgelabz.Algorithms;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class InsertionTest {
+
+	@Test
+	void test() {
+		String[] s= {ban,can,an,fan,don};
+		assertEquals("an,ban,can,don,fan",Insertion.insert(s));
+	}
+
+}

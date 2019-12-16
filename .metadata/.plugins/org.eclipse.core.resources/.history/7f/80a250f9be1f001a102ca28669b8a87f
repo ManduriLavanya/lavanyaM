@@ -1,0 +1,14 @@
+package com.Bridgelabz.Basic;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class FlipCoinTest {
+
+	@Test
+	void test() {
+		assertEquals(60.0,80.0,100.0,FlipCoin.flip(60.0),FlipCoin.flip(80.0),FlipCoin.flip(100.0));
+	}
+
+}

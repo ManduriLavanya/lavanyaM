@@ -1,0 +1,19 @@
+package com.Bridgelabz.Junit;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class TemperatureTest {
+
+	@Test
+	void test() {
+		assertEquals(98.60000000000001,Temperature.celsius(37.0));
+	}
+
+	private void assertEquals(double d, Object celsius) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,50 @@
+package com.Bridgelabz.Algorithms;
+
+import java.util.Scanner;
+
+public class Permutation {
+	// Utility function to swap two characters in a character array
+		private static void swap(char[] ch, int i, int j)
+		{
+			char temp = ch[i];
+			ch[i] = ch[j];
+			ch[j] = temp;
+		
+		}
+
+		// Recursive function to generate all permutations of a String
+		private static void permutations(char[] ch, int currentIndex)
+		{
+			int count=0;
+			if (currentIndex == ch.length - 1) {
+				System.out.println(String.valueOf(ch));
+				
+			}
+
+			for (int i = currentIndex; i < ch.length; i++)
+			{
+				swap(ch, currentIndex, i);
+				count++;
+				permutations(ch, currentIndex + 1);
+				count++;
+				swap(ch, currentIndex, i);
+				count++;
+				
+			}
+			System.out.println("c="+count);
+
+			
+			
+			
+		}
+
+		// generate all permutations of a String in Java
+		public static void main(String[] args)
+		{
+			String s;
+			Scanner sc=new Scanner(System.in);
+			System.out.println("Enter the string:");
+			s=sc.next();
+			permutations(s.toCharArray(), 0);
+		}
+}
