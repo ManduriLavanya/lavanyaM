@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="LeapYearTest" project="Basic" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.Bridgelabz.Basic.LeapYearTest" time="0.067" displayname="LeapYearTest" uniqueid="[engine:junit-jupiter]/[class:com.Bridgelabz.Basic.LeapYearTest]">
-    <testcase name="test" classname="com.Bridgelabz.Basic.LeapYearTest" time="0.067" displayname="test()" uniqueid="[engine:junit-jupiter]/[class:com.Bridgelabz.Basic.LeapYearTest]/[method:test()]"/>
-  </testsuite>
-</testrun>

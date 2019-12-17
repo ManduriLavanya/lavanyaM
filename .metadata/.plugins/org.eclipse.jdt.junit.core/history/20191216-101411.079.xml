@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="PowerTest" project="Basic" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.Bridgelabz.Basic.PowerTest" time="0.118" displayname="PowerTest" uniqueid="[engine:junit-jupiter]/[class:com.Bridgelabz.Basic.PowerTest]">
-    <testcase name="test" classname="com.Bridgelabz.Basic.PowerTest" time="0.118" displayname="test()" uniqueid="[engine:junit-jupiter]/[class:com.Bridgelabz.Basic.PowerTest]/[method:test()]"/>
-  </testsuite>
-</testrun>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="MonthlyPaymentTest" project="JunitTesting" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.Bridgelabz.Junit.MonthlyPaymentTest" time="0.429" displayname="MonthlyPaymentTest" uniqueid="[engine:junit-jupiter]/[class:com.Bridgelabz.Junit.MonthlyPaymentTest]">
-    <testcase name="test" classname="com.Bridgelabz.Junit.MonthlyPaymentTest" time="0.429" displayname="test()" uniqueid="[engine:junit-jupiter]/[class:com.Bridgelabz.Junit.MonthlyPaymentTest]/[method:test()]"/>
-  </testsuite>
-</testrun>
