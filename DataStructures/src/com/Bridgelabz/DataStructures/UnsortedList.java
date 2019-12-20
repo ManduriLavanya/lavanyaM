@@ -36,10 +36,8 @@ public class UnsortedList {
 		 }
 		 else {
 			 list.add(a);
-			 FileWriter fw=new FileWriter("/home/bridgelabz/Desktop/output.txt");    
-	           fw.write(a);    
-			 System.out.println(list);
-	           fw.close();    
+			System.out.println(list);
+	           
 
 		 }
 		
