@@ -1,0 +1,74 @@
+package com.Bridgelabz.Generics;
+
+import java.util.Arrays;
+
+public class Merge<T extends Comparable<T> > {
+
+	int[] b;
+	T len;
+	int[] temp;
+	public static void main(String[] args) {
+		int [] a= {7452,651,321,74126,654,258};
+		Merge m=new Merge();
+		m.sort(Arrays.toString(a));
+		
+		for(int i:a) {
+			System.out.print(i+" ");
+		}
+	}
+	
+	private void sort(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void sort(T a[]) {
+		T[] b=a;
+		T[] temp;
+		//len=a.length;
+		 temp=a[a.length];
+		 divide(0,a.length-1);
+	}
+	
+	public void divide(int low,int high) {
+		if(low<high) {
+			int mid=low+(high-low)/2;
+			divide(low,mid);
+			divide(mid+1,high);
+			merge(low,mid,high);
+			
+		}
+	}
+
+	public void merge(int low, int mid, int high) {
+
+		for(int i=low;i<=high;i++) {
+			T[] b;
+			
+			temp[i]=b[i];
+			
+		}
+		int i=low;
+		int j=mid+1;
+		int k=low;
+		while(i<=mid && j<=high) {
+			T[] temp;
+			if(temp[i].compareTo(temp[j])>0) {
+				b[k]=temp[i];
+				i++;
+			}
+			else {
+				b[k]=temp[j];
+				j++;
+			}
+			k++;
+		}
+		
+		while(i<=mid) {
+			T[] temp;
+			b[k]=temp[i];
+			k++;
+			i++;
+		}
+	}
+}

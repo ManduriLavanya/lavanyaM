@@ -1,0 +1,19 @@
+package com.Bridgelabz.Generics;
+
+public class Runner {
+
+	public static void main(String[] args) {
+	
+		
+		
+		Stack s=new Stack();
+		s.push("apple");
+		s.push("bat");
+		s.push("cat");
+		
+		s.peek();
+		
+		s.show();
+	}
+
+}

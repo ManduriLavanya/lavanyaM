@@ -60,6 +60,7 @@ public class PrimeAna2D {
 			}
 			if (primeAnagramNumber[i].length != 0)
 				System.out.println();
+
 		}
 
 	}

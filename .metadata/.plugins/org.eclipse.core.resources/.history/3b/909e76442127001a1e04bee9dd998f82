@@ -1,0 +1,39 @@
+package com.Bridgelabz.Generics;
+
+public class Runner {
+
+	public static void main(String[] args) {
+	
+		Queue e=new Queue();
+		e.Enqueue('a');
+		e.Enqueue('b');
+		e.Enqueue('c');
+		e.show();
+		e.remove();
+		e.show();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+
+		Stack s=new Stack();
+		s.push('a');
+		s.push('b');
+		s.push('c');
+		s.show();
+		System.out.println();
+
+		s.pop();
+		s.show();
+		s.peek();
+		
+		Linked l=new Linked();
+		l.insertAtBeg(10);
+		l.insertAtEnd(40);
+		l.insertAt(1, 30);
+		l.insertAtBeg(20);
+		l.show();
+		
+		
+	}
+
+}

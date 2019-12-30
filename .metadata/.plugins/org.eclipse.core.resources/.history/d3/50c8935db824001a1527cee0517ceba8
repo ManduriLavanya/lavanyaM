@@ -1,0 +1,62 @@
+package com.Bridgelabz.Generics;
+
+public class Merge {
+
+	int[] b;
+	int len;
+	int[] temp;
+	public static void main(String[] args) {
+		int [] a= {7452,651,321,74126,654,258};
+		Merge m=new Merge();
+		m.sort(a);
+		
+		for(int i:a) {
+			System.out.println(i+" ");
+		}
+	}
+	
+	public void sort(int a[]) {
+		this. b=a;
+		this.len=a.length;
+		this.temp=new int[len];
+		divide(0,len-1);
+	}
+	
+	public void divide(int low,int high) {
+		if(low<high) {
+			int mid=low+(high-low)/2;
+			divide(low,mid);
+			divide(mid+1,high);
+			merge(low,mid,high);
+			
+		}
+	}
+
+	public void merge(int low, int mid, int high) {
+
+		for(int i=low;i<=high;i++) {
+			temp[i]=b[i];
+			
+		}
+		int i=low;
+		int j=mid+1;
+		int k=low;
+		while(i<=mid && j<=high) {
+			if(temp[i]<=temp[j]) {
+				b[k]=temp[i];
+				i++;
+			}
+			else {
+				b[k]=temp[j];
+				j++;
+			}
+			k++;
+		}
+		
+		while(i<=mid) {
+			b[k]=temp[i];
+			k++;
+			i++;
+		}
+	}
+}

@@ -1,0 +1,104 @@
+package com.Bridgelabz.Generics;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class NumberList {
+    static String ar[]=new String[100];
+static String a;
+	public static void main(String[] args) throws IOException {
+		NumberList n=new NumberList();
+		
+		FileReader file=new FileReader("C:\\Users\\Hello\\Desktop\\1.txt"); 
+		BufferedReader br=new BufferedReader(file);
+		 String line;
+		    while ((line = br.readLine()) != null)
+		    {
+		     n.Enqueue(line);
+		    }
+		    for(int i=0;i<5;i++) {
+		    	ar[i]=n.Enqueue(a);
+		    	System.out.println();
+		    }
+		    
+		    System.out.println(n);
+			Scanner s=new Scanner(System.in);
+			System.out.println("Enter a word");
+			String a=s.next();
+			 boolean ans = n.contains(a); 
+			 if(true) {
+				
+				 n.remove(a);
+			       System.out.print(n);   
+			      
+			       
+			 }
+			 else {
+				
+				 n.Enqueue(a);
+				System.out.println(n.Enqueue(a));
+				 BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\Hello\\Desktop\\1.txt"));
+				    writer.write(n.Enqueue(a));
+				    
+				    writer.close();
+				 
+
+			 }
+		    br.close();
+		    return ;
+	
+		
+	}
+	
+	private boolean contains(String a) {
+		for(int i=0;i<5;i++) {
+		if(a==ar[i]) {
+			return true;
+		}
+		else
+		return false;
+		}
+		return true;
+	}
+
+
+
+	private String Enqueue(String a) {
+		Node n=new Node();
+		Node front=null;
+		Node rear=null;
+		int flag=0;
+		n.a=a;
+		n.next=null;
+		if(front==null && rear==null) {
+			front=rear=n;
+		return a;	
+		}
+		rear.next=n;
+		rear=n;
+		return a;		
+	}
+
+
+
+	private void remove(String a) {
+		Node front=null;
+		Node rear=null;
+		  a = front.str;
+		 front = front.next;
+		
+		
+		 System.out.println();
+		 System.out.println(a+ " removed from the queue");
+		 return ;		
+	}
+
+
+
+	
+	
+}

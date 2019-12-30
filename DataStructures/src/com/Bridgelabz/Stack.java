@@ -4,11 +4,7 @@ public class Stack<T> {
 	LinkedList<T> stack = new LinkedList<T>();
 	public static int top = 0;
 
-	/**
-	 * Purpose: push the element into stack
-	 * 
-	 * @param data push data into stack
-	 */
+	
 	public void push(T data) {
 
 		stack.add(data);
@@ -88,11 +84,7 @@ public class Stack<T> {
 		stack.showListWithoutSpaces();
 	}
 
-	/**
-	 * Purpose: method for returning the string of stack list
-	 * 
-	 * @return returns the stack list without spaces
-	 */
+	
 	public String returnStackWithoutSpaces() {
 		return stack.returnListInString();
 	}

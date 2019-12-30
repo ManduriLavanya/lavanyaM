@@ -1,0 +1,58 @@
+package com.Bridgelabz;
+
+import java.util.Scanner;
+
+public class Bank {
+	public static void main(String[] args) {
+		Queue<Integer> queue = new Queue<Integer>();
+		System.out.println("Enter people size");
+		Scanner scanner = new Scanner(System.in);
+		int people = scanner.nextInt();
+
+		System.out.println("Hi! Welcome to bank simulation: ");
+		for (int i = 0; i < people; i++) {
+
+			queue.enQueue(i);
+			queue.service();
+			queue.deQueue();
+		}
+		if (queue.isEmpty()) {
+			System.out.println("Queue is empty");
+		}
+		System.out.println("Bank Closing balance is : " + queue.bankBalance);
+		scanner.close();
+	}
+	}
+	public static void service() {
+		int bankBalance = 500000;
+		Scanner scanner = new Scanner(System.in);
+		int counter = 1;
+		System.out.println("Token number is : " + counter);
+
+		int choice;
+		int amount = 0;
+		System.out.println("press 1: for withdraw\npress 2: for deposit");
+		choice = scanner.nextInt();
+
+		switch (choice) {
+		case 1:
+			System.out.println("Enter amount to withdraw");
+			amount = scanner.nextInt();
+			bankBalance = bankBalance - amount;
+			System.out.println("Thank you for using service");
+			amount = 0;
+			break;
+		case 2:
+			System.out.println("Enter amount to deposit");
+			amount = scanner.nextInt();
+			bankBalance = bankBalance + amount;
+			System.out.println("Thank you for using service");
+			amount = 0;
+			break;
+		default:
+			System.out.println("Enter valid option");
+		}
+		counter++;
+	
+	}
+}

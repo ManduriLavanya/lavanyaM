@@ -1,0 +1,38 @@
+package com.Bridgelabz.Generics;
+
+import java.util.Arrays;
+
+public class Bubble <T extends Number> {
+
+	 public static void main(String[] args)
+	    {
+	        
+	        Integer[]  s = {46532,54652,123,56,85,562};
+	        Bubble<Integer> b   = new Bubble<Integer>();
+	        b.bubblesort(s);
+	        System.out.println(s);
+
+	     
+	    }
+
+	 void bubblesort(T[] a) {
+		 for (int i = 0; i < a.length; i++) 
+		{
+			 int j;
+		    for ( j =  1; j < a.length-i; j++) { 
+		       
+		    	if(a[j-1]>a[j]) {
+		    		T temp;
+		           temp = a[j-1];
+		            a[j-1] = a[j];
+		            a[j] = temp;
+		        
+		    	}
+		    }
+		}
+		
+	}
+	 
+	 
+	
+}

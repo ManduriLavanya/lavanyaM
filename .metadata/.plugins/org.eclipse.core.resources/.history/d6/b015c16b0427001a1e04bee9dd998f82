@@ -1,0 +1,39 @@
+package com.Bridgelabz.Generics;
+
+import java.util.Scanner;
+
+public class Bst {
+
+	public static void main(String[] args) {
+		System.out.println("Enter thr n number:");
+		Scanner s=new Scanner(System.in);
+		
+		int n=s.nextInt();
+int q,c=0;
+		int b[]=new int [n];
+		System.out.println("Enter the elements:");
+		for( q=0;q<n;q++) {
+			b[q]=s.nextInt();
+			c++;
+		
+			int i,m=0;
+		
+		
+			int a[]=new int [1000];
+
+			a[1]=1;a[0]=1;
+			for( i=2;i<=b[q];i++) {
+			
+				for(int j=0;j<i;j++) {
+					a[i]+=a[j]*a[i-j-1];
+				}
+			 m=a[i];
+		}
+		
+
+		System.out.println(m);
+
+		}
+	
+	}
+}

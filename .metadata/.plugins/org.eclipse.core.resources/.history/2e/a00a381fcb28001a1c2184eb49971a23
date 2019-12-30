@@ -1,0 +1,24 @@
+package com.Bridgelabz;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Utility {
+
+	public String readFile(String path) throws IOException {
+		String str = "";
+		BufferedReader bufferedReader = new BufferedReader(new FileReader(path));
+		str = bufferedReader.readLine();
+		bufferedReader.close();
+		return str;
+	}
+	
+	public String writeFile(String path, String str) throws IOException {
+		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(path));
+		bufferedWriter.write(str);
+		bufferedWriter.close();
+		return "\nFile is Written...";
+	}
+}

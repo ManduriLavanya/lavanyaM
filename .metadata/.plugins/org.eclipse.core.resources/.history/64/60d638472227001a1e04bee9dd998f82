@@ -1,0 +1,14 @@
+package com.Bridgelabz.Generics;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+public class NumberList {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		FileReader file=new FileReader("1.txt"); 
+		BufferedReader br=new BufferedReader(file);
+	}
+	
+}

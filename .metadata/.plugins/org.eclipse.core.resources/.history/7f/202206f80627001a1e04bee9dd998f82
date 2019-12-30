@@ -1,0 +1,9 @@
+package com.Bridgelabz.Generics;
+
+public class PrimeArray {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

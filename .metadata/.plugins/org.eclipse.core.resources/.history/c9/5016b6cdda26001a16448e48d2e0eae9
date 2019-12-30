@@ -1,0 +1,43 @@
+package com.Bridgelabz.Generics;
+
+public class Queue {
+	
+	static Node front = null;
+	static	Node rear = null;
+	public static void Enqueue(String data) {
+		Node n=new Node();
+		int flag=0;
+		n.data=data;
+		n.next=null;
+		if(front==null && rear==null) {
+			front=rear=n;
+		return;	
+		}
+		rear.next=n;
+		rear=n;
+		
+	}
+	
+	public static void Dequeue() {
+		Node n1=front;
+		if(front==null)
+				return;
+		if(front==rear) {
+			front=rear=null;
+		}
+		else {
+			front=front.next;
+		}
+		System.out.println();
+		
+	}
+	public void show() {
+		Node n1=front;
+		while(n1.next!=null) {
+			System.out.print(n1.data+" ");
+			n1=n1.next;
+		}
+		System.out.print(n1.data+" ");
+	}
+	
+}

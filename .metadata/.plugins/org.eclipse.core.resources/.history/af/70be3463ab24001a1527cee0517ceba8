@@ -1,0 +1,36 @@
+package com.Bridgelabz.Generics;
+
+import java.util.Arrays;
+
+public class Bubble <T extends Comparable> {
+
+	 public static void main(String[] args)
+	    {
+	        
+	        int[]  s = {451,224,849,121,3646};
+	        Bubble<Integer> aingSorter   = new Bubble<>();
+	        aingSorter.bubble(s);
+	        System.out.println(s);
+
+	     
+	    }
+
+	public void bubble(T[] a) {
+		for (int i = 0; i < 5; i++) 
+		{
+		    for (int j = i + 1; j < 5; j++) { 
+		       
+		    	if (a[i]>a[j]) 
+		        {
+		           int temp = a[i];
+		            a[i] = a[j];
+		            a[j] = temp;
+		        }
+		    }
+		}
+		
+	}
+	 
+	 
+	
+}

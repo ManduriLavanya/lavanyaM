@@ -12,10 +12,11 @@ public class Prime2D {
 		for (int i = 0; i < 10; i++) {
 			for (int j = start; j <= end; j++) {
 				if (Utility.isPrime(j)) {
-					j1++;
 				}
 			}
-			primeNumber[i] = new int[j1];
+			System.out.println(j1);
+		primeNumber[i] = new int[j1];
+			
 			start = end + 1;
 			end += 100;
 			j1 = 0;

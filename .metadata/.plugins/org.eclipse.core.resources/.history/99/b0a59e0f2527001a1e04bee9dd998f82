@@ -1,0 +1,8 @@
+package com.Bridgelabz.Generics;
+
+public class Node {
+	Character data;
+	String ele;
+	Node front,rear,top,next;
+	
+}

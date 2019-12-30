@@ -1,0 +1,36 @@
+package com.Bridgelabz.Generics;
+import com.Bridgelabz.Generics.Linked;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Arrays;
+
+public class NumberList {
+
+	public static void main(String[] args) throws IOException {
+		
+		Linked l=new Linked();
+		FileReader file=new FileReader("1.txt"); 
+		BufferedReader br=new BufferedReader(file);
+		 String line;
+		    while ((line = br.readLine()) != null)
+		    {
+		      l.insertAtEnd(line);
+		    }
+		    br.close();
+		    return l;
+	
+		
+	}
+	
+	public void insertAtBeg(String ele) {
+		Node n=new Node();
+		n.ele=ele;
+		n.next=null;
+		n.next=head;
+		head=n;
+	}
+	
+}

@@ -1,0 +1,16 @@
+package com.Bridgelabz;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Utility {
+
+	public String readFile(String path) throws IOException {
+		String str = "";
+		BufferedReader bufferedReader = new BufferedReader(new FileReader(path));
+		str = bufferedReader.readLine();
+		bufferedReader.close();
+		return str;
+	}
+}
